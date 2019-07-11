@@ -23,7 +23,14 @@ int main(){
 
   if(D <= 7){
     printf("%s lost.\n",name);
-    printf("Rolling the more dice...\n");
+    printf("Rolling the more dice...\n");   
+
+  }
+  else{
+    printf("%s won.\n",name);
+  }
+
+  while(D <= 7){
     int D3;
     D3 = rand()%6+1;
     D += D3;
@@ -37,10 +44,6 @@ int main(){
     else{
       printf("%s won.\n",name);
     }
-
-  }
-  else{
-    printf("%s won.\n",name);
   }
 
   
