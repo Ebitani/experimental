@@ -23,10 +23,28 @@ int main(){
 
   if(D <= 7){
     printf("%s lost.\n",name);
+    printf("Rolling the more dice...\n");
+    int D3;
+    D3 = rand()%6+1;
+    D += D3;
+    printf("Die new: %d\n",D3);
+    printf("Total new value: %d\n",D);
+
+    if(D <= 7){
+      printf("%s lost.\n",name);
+
+    }
+    else{
+      printf("%s won.\n",name);
+    }
+
   }
   else{
     printf("%s won.\n",name);
   }
+
+  
+  
 
   return 0;
 }
